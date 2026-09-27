@@ -1,0 +1,9 @@
+{
+  "detection_threshold": 0.85,
+  "network_interface": "",
+  "packets_per_run": 50,
+  "capture_timeout": 30,
+  "email_alerts": true,
+  "alert_email": "kishankarthik0607@gmail.com",
+  "preferred_model": "Random Forest"
+}

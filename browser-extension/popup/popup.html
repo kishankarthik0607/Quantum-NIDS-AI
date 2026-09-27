@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+    <title>Quantum NIDS Guard</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Quantum NIDS Browser Guard</h2>
+        <span class="sub-header">E-Commerce Threat & Attribution Defense</span>
+    </div>
+    
+    <div id="status-container" class="card">
+        <div class="status-row">
+            <span class="label">Website:</span>
+            <span id="site-name" class="value truncate">Checking...</span>
+        </div>
+        <div class="status-row">
+            <span class="label">Status:</span>
+            <span id="status-text" class="badge">UNKNOWN</span>
+        </div>
+        <div class="status-row">
+            <span class="label">Risk Score:</span>
+            <span class="value"><span id="risk-score">0</span> / 100</span>
+        </div>
+        <div class="risk-bar-container">
+            <div id="risk-bar" class="risk-bar"></div>
+        </div>
+    </div>
+
+    <!-- Scan Progress Indicator (Shown while scan is active) -->
+    <div id="scan-progress-card" class="card" style="display: none;">
+        <div class="scan-header">
+            <span class="spinner"></span>
+            <strong id="scan-step-text">Initiating Deep Security Audit...</strong>
+        </div>
+        <div class="progress-bar-bg">
+            <div id="scan-progress-bar" class="progress-bar-fill"></div>
+        </div>
+    </div>
+    
+    <!-- Security Indicators / Summary -->
+    <div class="card" id="indicators-card">
+        <h3>Security Indicators</h3>
+        <ul id="alerts-list">
+            <li class="safe">✓ No suspicious activity detected yet.</li>
+        </ul>
+    </div>
+    
+    <!-- Recommended Actions Card -->
+    <div class="card" id="recommendations-card" style="display: none;">
+        <h3>Recommended Actions</h3>
+        <div id="recommendations-text"></div>
+    </div>
+
+    <!-- Detailed Findings List (Populated after Detailed Scan) -->
+    <div class="card" id="findings-section" style="display: none;">
+        <div class="findings-header">
+            <h3>Audit Findings (<span id="findings-count">0</span>)</h3>
+            <span id="scan-timestamp" class="scan-time"></span>
+        </div>
+        <div id="findings-container"></div>
+    </div>
+
+    <div class="footer">
+        <button id="run-scan">Run Detailed Scan</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

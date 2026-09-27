@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Testing & runtime caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs (keep directory structure via README)
+logs/*.log
+
+# Large Raw and Processed Datasets (see data/README.md)
+data/raw/*.csv
+data/raw/*.pcap
+data/processed/*.csv
+data/processed/*.npy
+
+# Local configuration / user accounts
+config/users.json
+
+# Node modules & OS artifacts
+node_modules/
+.DS_Store
+Thumbs.db

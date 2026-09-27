@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css">
+    <title>Quantum NIDS Guard Settings</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Quantum NIDS Guard Settings</h2>
+        
+        <div class="card">
+            <label>
+                <strong>Backend API URL:</strong><br>
+                <input type="text" id="api-url" value="http://127.0.0.1:8000/api/v1/predict" style="width: 100%; padding: 8px; margin-top: 5px;">
+            </label>
+        </div>
+
+        <div class="card">
+            <label>
+                <strong>Risk Threshold:</strong><br>
+                <small>Alert if risk score exceeds this value (0-100).</small><br>
+                <input type="number" id="risk-threshold" value="50" min="0" max="100" style="width: 100%; padding: 8px; margin-top: 5px;">
+            </label>
+        </div>
+        
+        <div style="margin-top: 15px; display: flex; align-items: center;">
+            <button id="save-btn">Save Settings</button>
+            <button id="test-btn" style="margin-left: 8px; background: #455a64; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Test Connection</button>
+            <span id="status" style="margin-left: 12px; font-weight: bold; font-size: 13px;"></span>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

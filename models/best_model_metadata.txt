@@ -1,0 +1,10 @@
+Best Model Metadata
+============================================================
+model_name: Random Forest
+f1_score: 0.9992495622446427
+roc_auc: 0.9999843055555556
+accuracy: 0.99925
+precision: 0.999833138661772
+recall: 0.9986666666666667
+train_time: 2.805861234664917
+timestamp: 2026-09-19 22:12:37

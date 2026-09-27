@@ -1,0 +1,37 @@
+Selected Features (RFE)
+============================================================
+Total Selected: 30
+Selection Method: Recursive Feature Elimination (RFE)
+Base Estimator: LogisticRegression(max_iter=500)
+============================================================
+
+1. Destination_Port
+2. Total_Backward_Packets
+3. Total_Length_of_Fwd_Packets
+4. Total_Length_of_Bwd_Packets
+5. Fwd_Packet_Length_Max
+6. Fwd_Packet_Length_Mean
+7. Bwd_Packet_Length_Max
+8. Bwd_Packet_Length_Min
+9. Bwd_Packet_Length_Std
+10. Flow_IAT_Std
+11. Flow_IAT_Max
+12. Fwd_IAT_Total
+13. Fwd_IAT_Mean
+14. Fwd_IAT_Max
+15. Fwd_IAT_Min
+16. Bwd_IAT_Total
+17. Bwd_IAT_Max
+18. Fwd_Packets/s
+19. Max_Packet_Length
+20. Packet_Length_Variance
+21. PSH_Flag_Count
+22. ACK_Flag_Count
+23. Avg_Fwd_Segment_Size
+24. Subflow_Fwd_Bytes
+25. Subflow_Bwd_Packets
+26. Subflow_Bwd_Bytes
+27. Init_Win_bytes_backward
+28. Active_Std
+29. Active_Max
+30. Idle_Max
